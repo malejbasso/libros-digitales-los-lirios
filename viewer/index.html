@@ -307,9 +307,7 @@
         pdfjsLib.GlobalWorkerOptions.workerSrc =
             '/js/pdfjs/pdf.worker.js';
 
-        const params = new URLSearchParams(window.location.search);
-        const book = params.get("book");
-        const url = `/books/${book}.pdf`;
+        const url = `libro.pdf`;
 
         const pdfTextIndex = [];
 
