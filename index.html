@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -294,22 +294,20 @@
 
     </div>
 
-    <audio id="pageSound" src="/audio/page-flip.mp3"></audio>
+    <audio id="pageSound" src="wwwroot/audio/page-flip.mp3"></audio>
 
-    <script src="/js/jquery.js"></script>
+    <script src="wwwroot/js/jquery.js"></script>
 
-    <script src="/js/turn.js"></script>
+    <script src="wwwroot/js/turn.js"></script>
 
-    <script src="/js/pdfjs/pdf.js"></script>
+    <script src="wwwroot/js/pdfjs/pdf.js"></script>
 
     <script>
 
         pdfjsLib.GlobalWorkerOptions.workerSrc =
-            '/js/pdfjs/pdf.worker.js';
+            'wwwroot/js/pdfjs/pdf.worker.js';
 
-        const params = new URLSearchParams(window.location.search);
-        const book = params.get("book");
-        const url = `/books/${book}.pdf`;
+        const url = `libro.pdf`;
 
         const pdfTextIndex = [];
 
